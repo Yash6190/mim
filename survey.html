@@ -1,0 +1,181 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <style>
+
+.back-video {
+        position: fixed;
+        right: 0;
+        bottom: 0;
+        min-width: 100%; 
+        min-height: 100%;
+        width: auto; 
+        height: auto; 
+        z-index: -100;
+    }
+    body {
+            background-color: rgba(0, 0, 0, 0.7);
+            color: white;
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            margin-top: 50px;
+            border-radius: 15px;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.1);
+        }
+        .form-control {
+            background: rgba(255, 255, 255, 0.2);
+            border: none;
+            color: white;
+        }
+        .btn-primary {
+            background-color: #007bff;
+            border: none;
+        }
+        .row {
+            display: flex;
+        }
+        .about-me {
+            margin-left: auto;
+            text-align: center;
+            background: rgba(255, 255, 255, 0.4);
+            padding: 20px;
+            border-radius: 15px;
+        }
+        .about-me img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            border: 3px solid white;
+        }
+        .about-me h2, .about-me p {
+            margin: 15px 0;
+        }
+
+    </style>
+</head>
+<body>
+    
+
+    
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+   
+    <button
+type="button"
+data-bs-toggle="collapse"
+data-bs-target="#navbarNav"
+class="navbar-toggler"
+aria-controls="navbarNav"
+aria-expanded="false"
+aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="./main.html">HOME<span class="sr-only">(current)</span></a>
+        
+        
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="../anime/3.html">ANIME</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="../people/2.html">Famous People</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="../places/1.html">Famous Places</a>
+        </li>
+        
+      </ul>
+    </div>
+  </nav>
+  <div class="hero">
+    <video autoplay loop muted plays-inline class="back-video">
+        <source src="./Aether and Paimon Wallpaper _ Web Event _A Journey Through Pages_  _ Genshin Impact.mp4" type="video/mp4">
+    </video>
+    </div>
+   
+<div class="container">
+    <div class="row">
+        <div class="col-md-8">
+            <form>
+                <div class="form-group">
+                    <label for="name">YOUR Name</label>
+                    <input type="text" class="form-control" id="name" placeholder="Enter your name">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" class="form-control" id="email" placeholder="Enter your email">
+                </div>
+                <div class="form-group">
+                    <label for="feedback">Write your Feedback about the website</label>
+                    <textarea class="form-control" id="feedback" rows="3" placeholder="Enter your feedback"></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="dropdown">Which is your favourite tourist place in Japan?</label>
+                    <select class="form-control" id="dropdown">
+                        <option>TOKYO</option>
+                        <option>OSAKA</option>
+                        <option>MOUNT FUJI</option>
+                        <option>KYOTO</option>
+                        <option>Itsukushima Shinto Shrine</option>
+                        <option>HOKKAIDO</option>
+                    </select>
+                </div>
+                <label for="name">In following , which of these are your favourite anime characters?</label>
+
+                <div class="form-group form-check">
+                    <input type="checkbox" class="form-check-input" id="check">
+
+                    <label class="form-check-label" for="check">Naruto</label>
+                    <br>
+                    <input type="checkbox" class="form-check-input" id="check">
+                  
+                    <label class="form-check-label" for="check">Goku</label>
+                    <br>
+                    <input type="checkbox" class="form-check-input" id="check">
+                    <label class="form-check-label" for="check">Luffy</label>
+                    <br>
+                    <input type="checkbox" class="form-check-input" id="check">
+                    <label class="form-check-label" for="check">Gojo Sataro</label>
+                    <br>
+                    <input type="checkbox" class="form-check-input" id="check">
+                    <label class="form-check-label" for="check">YUJI Itadori</label>
+                    <br>
+                    <input type="checkbox" class="form-check-input" id="check">
+                    <label class="form-check-label" for="check">Zoro</label>
+                    <br>
+                    <input type="checkbox" class="form-check-input" id="check">
+                    <label class="form-check-label" for="check">Ichigo</label>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+        </div>
+        <div class="col-md-4 about-me">
+            <h2>About Me</h2>
+            <img src="./WhatsApp Image 2024-04-13 at 10.15.50 PM.jpeg" alt="Your Name">
+            
+            <p style="margin-top: 200px; font-size: 20px; color:black; font-weight: 400;" >Hi ,thank you for being here. I really apperciate your time. I hope you like my website. This is my first time giving my all on this "Ethnovision". Please fill the survey form , so I can improve myself more.</p>
+        </div>
+    </div>
+</div>
+
+<footer class="footer mt-auto py-3 bg-dark fixed-bottom">
+         
+    <span class="text-light">Copyright &copy; 2024 | Created by Yashvardhan Singh Pathania | <a href="mailto:yashpathania@61@gmail.com" class="text-light">yashpathania@61@gmail.com</a></span>
+  
+  </footer>
+</body>
+</html>
+ 
+    
+    
+    
+    
+   
